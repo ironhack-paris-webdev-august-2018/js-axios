@@ -1,11 +1,25 @@
 const feraligatrBtn = document.querySelector(".get-gatr");
 const pokemonList = document.querySelector(".pokemon-list");
+const pokemonForm = document.querySelector(".pokemon-search");
+const inputField = document.querySelector(".pokemon-input");
 
 feraligatrBtn.onclick = () => {
   // charizard 6    pikachu 25
   // jigglypuff 39  mewtwo 150
   console.log("Getting Feraligatr");
   getPokemon(160);
+};
+
+pokemonForm.onsubmit = (event) => {
+  // normally the page would refresh with a submit event
+  // "preventDefault()" STOPS that from happening
+  event.preventDefault();
+
+  console.log("Search form SUBMITTED!");
+
+  // get the <input> tag's VALUE (text inside the input)
+  const pokeNumber = inputField.value;
+  getPokemon(pokeNumber);
 };
 
 

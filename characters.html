@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Axios - POST</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Axios - POST</h1>
+  </header>
+
+  <h2>Create a New Character</h2>
+  <form class="post-character">
+    <label>
+      Name:
+      <input type="text" class="char-name" placeholder="Master Yoda" />
+    </label>
+    <br />
+
+    <label>
+      Occupation:
+      <input type="text" class="char-job" placeholder="Gradmaster of the Jedi" />
+    </label>
+    <br />
+
+    <label>
+      Weapon:
+      <input type="text" class="char-weapon" placeholder="Lightsaber" />
+    </label>
+    <br />
+
+    <button>Save This Character</button>
+  </form>
+
+  <ul class="feedback-list"></ul>
+
+  <footer>
+    <p>Made with 🐊 at Ironhack</p>
+  </footer>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/character-script.js"></script>
+</body>
+</html>
